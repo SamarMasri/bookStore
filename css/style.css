@@ -6,10 +6,11 @@
     --section-padding: 50px;
     --font-type: Arial, Helvetica, sans-serif;
 }
+
 /* Home Section */
 .home {
     padding: var(--section-padding);
-    background: url('image/bg.png') no-repeat center/cover;
+    background: url('/image/bg.png') no-repeat center/cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -71,6 +72,215 @@
     max-width: 100%;
     margin-top: -120px;
 }
+
+/* Advantages Section */
+.advantages {
+    padding: var(--section-padding);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    background-color: var(--primary-text);
+    font-family: var(--font-type);
+}
+
+.advantages div {
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: var(--primary-text);
+    box-shadow: 0 0 10px rgba(24, 137, 141, 0.6);
+}
+
+.advantages img { 
+    width: 35px; 
+    margin-bottom: 10px;
+ }
+.advantages h3 { 
+    font-size: 18px; 
+    font-weight: bold; 
+    margin-bottom: 6px; 
+    color: var(--black-color);
+ }
+.advantages p { 
+    font-size: 15px; 
+    line-height: 1.4; 
+    color: #555; 
+}
+
+/* Featured Books */
+.featured {
+    padding: var(--section-padding);
+}
+
+.featured .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: var(--font-type);
+}
+
+.books-container {
+    display: flex;
+    gap: 1.25rem;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: .625rem 0;
+}
+
+.books-container::-webkit-scrollbar {
+    height: .5rem;
+}
+
+.books-container::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: .625rem;
+}
+
+.books-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    border-radius: .625rem;
+}
+
+.book-card {
+    border: 1px solid rgba(78, 77, 78, 0.7);
+    text-align: center;
+    width: 12.5rem;
+    padding-left: 15px;
+    padding-right: 15px;
+   padding-bottom: 20px;
+    flex-shrink: 0;
+    font-family: var(--font-type);
+}
+.book-card img {
+     width: 100%; 
+     height: auto;
+    }
+.book-card h3 { 
+    font-size: 1rem; 
+    font-weight: bold; 
+    margin: .3125rem 0;
+ }
+.book-card p { 
+    font-size: .75rem; 
+    margin: .1875rem 0; 
+    line-height: 1.2; 
+}
+.price { 
+    font-weight: bold;
+     color:var(--black-color);
+     }
+.old-price {
+    text-decoration: line-through; 
+    font-weight: normal; 
+    color:var(--black-color); 
+    margin-left: .3125rem;
+    font-family: var(--font-type);
+    
+ }
+.author {
+    font-weight: bold;
+    color: #333;
+}
+
+.genre {
+    
+    font-size: 0.7rem;
+    color: var(--primary-color);
+}
+
+.book-card:hover { 
+    box-shadow: 0px 0px .125rem 0.0625rem rgba(24, 137, 141, 0.6); }
+.f_btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 8px 14px;
+    background-color: var(--primary-text);
+    color: var(--black-color);            
+    font-size: 14px;
+    border: 2px solid var(--primary-color); 
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.3s ease;
+    font-family: var(--primary-text);
+}
+
+.f_btn:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+}
+
+
+
+
+/*New Arriavls*/
+
+.Arrivals {
+    padding: 5px;
+}
+
+.Arrivals .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: var(--font-type);
+}
+.arrivals-container {
+    display: grid;
+    grid-template-columns: repeat(5, 12.5rem);
+    column-gap: 80px; 
+    row-gap: 25px; 
+    justify-content: center;
+    justify-items: center; 
+    margin: 0 auto;
+    
+}
+
+
+.book-card2 {
+  border: 1px solid rgba(78, 77, 78, 0.7);
+  text-align: center;
+  width: 12.5rem; 
+ font-family: var(--font-type);
+ padding-left: 15px;
+padding-right: 15px;
+ padding-bottom: 20px;
+overflow: hidden;
+}
+
+.book-card2 img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    transition: transform 0.4s ease;
+}
+.book-card2:hover img {
+    transform: scale(1.1);
+}
+
+
+.book-card2 h3 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+
+.book-card2 .star {
+    color: var(--primary-color); 
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+.book-card2:hover {
+    box-shadow: 0 0 10px rgba(24,137,141,0.4);
+    transform: translateY(-5px);
+}
+
+
+
+
 
 
 
